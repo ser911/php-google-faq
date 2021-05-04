@@ -33,14 +33,7 @@ Quando cerchi un nome, potresti trovare una notifica in cui viene spiegato che i
 
  ],
  
-
-
-
-
-
-
 ]
-
 
 ?>
 
@@ -54,6 +47,12 @@ Quando cerchi un nome, potresti trovare una notifica in cui viene spiegato che i
     <title>Document</title>
 </head>
 <body>
-    
+    <?php 
+    foreach($google_faq as $value) {
+      echo "<h3> {$value['q']}</h3> <br> <p>{$value['a']}</p>" ;
+    }
+
+
+    ?>
 </body>
 </html>
